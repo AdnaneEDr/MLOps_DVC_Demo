@@ -1,0 +1,4 @@
+[core]
+    remote = stockage_local
+['remote "stockage_local"']
+    url = C:\Users\lenovo\dvc-storage
