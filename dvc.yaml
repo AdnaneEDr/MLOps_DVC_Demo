@@ -1,0 +1,16 @@
+stages:
+  prepare:
+    cmd: py src/prepare.py
+    deps:
+      - src/prepare.py
+      - data/patients.csv
+    outs:
+      - data/processed.csv
+  train:
+    cmd: py src/train.py
+    deps:
+      - src/train.py
+      - data/processed.csv
+    outs:
+      - models/model.pkl
+
